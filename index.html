@@ -16,10 +16,10 @@
     <!-- Js Query -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
-<body>
+<body  onload="myFunction2()">
     <header>
         <a href="index.html">
-            <img class="logo" src="images/image1.png" height="77" width="161">
+            <img class="logo" src="images/image2.png" height="77" width="161">
         </a>
         <a href="javascript:void(0);" id="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -92,7 +92,14 @@
         } else {
         x.style.display = "block";
         }
-        }
+        };
+
+        function myFunction2() {
+            var w = window.innerWidth;
+            if(w<800){
+                $(".logo").attr("src", scrollSrc);
+            }
+        };
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="index.js"></script>
