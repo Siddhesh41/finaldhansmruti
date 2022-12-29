@@ -1,6 +1,3 @@
-
-
-
 window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky",window.scrollY>0);
@@ -8,13 +5,21 @@ window.addEventListener("scroll",function(){
 
 var initialSrc = "images/image2.png";
 var scrollSrc = "images/image1.png";
+var w = window.innerWidth;
 
 $(window).scroll(function() {
 var value = $(this).scrollTop();
-if (value > 0)
+if(w>=800){
+    if (value > 0){
+        $(".logo").attr("src", scrollSrc);
+    }
+    else{
+        $(".logo").attr("src", initialSrc);
+    }
+}
+if(w<800){
     $(".logo").attr("src", scrollSrc);
-else
-    $(".logo").attr("src", initialSrc);
+}
 });
 
 // 2nd file
