@@ -1,3 +1,20 @@
+
+        function myFunction() {
+        var x = document.getElementById("mylinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        };
+
+        function myFunction2() {
+            var w = window.innerWidth;
+            if(w<800){
+                $(".logo").attr("src", scrollSrc);
+            }
+        };
+
 window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky",window.scrollY>0);
