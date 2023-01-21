@@ -133,6 +133,10 @@ body{
 /* 5 */
 
 @media screen and (min-width: 800px) {
+    .paraOfAboutUs{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .colFirm{
         float: left;
         width: 25%;
@@ -329,8 +333,6 @@ body{
 
 .paraOfAboutUs{
     margin-top: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
     margin-bottom: 3%;
     color: rgba(92, 86, 86, 0.88);
     line-height: 160%;
