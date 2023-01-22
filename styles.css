@@ -133,6 +133,12 @@ body{
 /* 5 */
 
 @media screen and (min-width: 800px) {
+    .colMap{
+        width: 50%;
+    }
+    .colStats{
+        width: 25%;
+    }
     .paraOfAboutUs{
         padding-left: 10%;
         padding-right: 10%;
@@ -207,7 +213,13 @@ body{
 }
 
 @media screen and (max-width: 800px){   
-
+    .colMap{
+        width: 100%;
+    }
+    .colStats{
+        width: 50%;
+        margin-bottom: 5%;
+    }
     .colFirm{
         float: left;
         width: 50%;
@@ -425,8 +437,77 @@ body{
 .ContentStats{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .Stats{
     margin-bottom: 3%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.colStats{
+    float: left;
+    text-align: center;
+}
+
+.rowStats{
+    margin-bottom: 5%;
+}
+
+.mapArea{
+    background-color : rgb(248,248,248);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.colMap{
+    float: left;
+}
+
+.addressMap{
+    text-align: left;
+    margin: 5%;
+}
+
+.headMap{
+    letter-spacing: 2px;
+    margin-bottom: 3%;
+}
+
+.lastF{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: large;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0%;
+
+}
+
+.addMap{
+    color: rgba(92, 86, 86, 0.88);
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.footer{
+    text-align: center;
+}
+
+.logos{
+    color: black;
+}
+
+.fa {
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
