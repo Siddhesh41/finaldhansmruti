@@ -10,6 +10,9 @@
     <!-- Including CSS File -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- CSS Files for animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -85,7 +88,7 @@
 	</div>
 
 
-    <div class="aboutUs">
+    <div class="aboutUs" data-aos="zoom-in">
             <div class="contentAboutUs">
                 <h2 class="headingLittle"><span style="color: #fa8128;">- </span><b>A LITTLE ABOUT US</b><span style="color: #fa8128;"> -</span></h2>
                 <div class="paraOfAboutUs">
@@ -99,12 +102,14 @@
 
     <div class="firm">
         <div class="firmSection">
-            <h2 class="headingLittle"><b><span style="color: #fa8128;">- </span>OUR SECTORS</b><span style="color: #fa8128;"> -</span></h2>
-            <div class="paraOfFirm">
+            <div data-aos="fade-right">
+                <h2 class="headingLittle"><b><span style="color: #fa8128;">- </span>OUR SECTORS</b><span style="color: #fa8128;"> -</span></h2>
+                <div class="paraOfFirm">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut perspiciatis laboriosam harum voluptatum, error quo fugiat perferendis, excepturi deleniti possimus odio, nesciunt sequi asperiores dolores!</p>
             </div>
+            </div>
             <div>
-                <div class="colFirm">
+                <div class="colFirm" data-aos="fade-up">
                     <div class="imageFirm">
                         <img src="images/cr1.jpg" alt="" style="width: 100%; height: 100%">
                     </div>
@@ -117,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="colFirm">
+                <div class="colFirm" data-aos="fade-up">
                     <div class="imageFirm">
                         <img src="images/cr2.jpg" alt="" style="width: 100%; height: 100%">
                     </div>
@@ -130,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="colFirm">
+                <div class="colFirm" data-aos="fade-up">
                     <div class="imageFirm">
                         <img src="images/cr3.jpg" alt="" style="width: 100%; height: 100%">
                     </div>
@@ -143,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="colFirm">
+                <div class="colFirm" data-aos="fade-up">
                     <div class="imageFirm">
                         <img src="images/cr4.jpeg" alt="" style="width: 100%; height: 100%">
                     </div>
@@ -166,7 +171,19 @@
         </div>
     </div>
 
+    <!-- AOS Animation JS file -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:170,
+            duration:1000,
+        });
+    </script>
+
+    <!-- JS Query file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- External JS File -->
     <script src="index.js"></script>
 </body>
 </html>
